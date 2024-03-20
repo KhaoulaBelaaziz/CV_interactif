@@ -1,0 +1,26 @@
+{
+  "name": "cv_interactif",
+  "version": "1.0.0",
+  "description": "Un CV complet intéractif",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server . -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaoulaBelaaziz/CV_interactif.git"
+  },
+  "keywords": [
+    "CV"
+  ],
+  "author": "Khaoula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhaoulaBelaaziz/CV_interactif/issues"
+  },
+  "homepage": "https://github.com/KhaoulaBelaaziz/CV_interactif#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
