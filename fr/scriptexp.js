@@ -1,34 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
   const experiences = [
       {
-          title: "Apprenti Conducteur de travaux en alternance",
-          date: "Septembre 2022 à octobre 2024",
-          company: "<a href='https://www.eurovia.fr'>Eurovia PACA</a> (13) <br> ",
-          mainText: "Etude de marchées, budgétisation et négociation <br> Analyse des performances et rapports <br> Gestion d’un portefeuille de sous-traitants <br> Chef de chantier, gestion d’équipes et des procédés",
+          title: "Présidente du Club AIAC Great Debaters ",
+          date: "2021/2022",
+          company: "<a href='https://facebook.com/gdbaiac?locale=fr_FR'>The Great Debators AIAC</a>  <br> ",
+          mainText: "Passionnée par le monde des débats, j'ai cherché à partager cette passion avec les nouveaux membres de notre communauté en mettant en place et en dirigeant des échanges inter-écoles.",
           images: [
           ]
       },
       {
-        title: "Enseignant d'anglais au Japon",
-        date: "Avril 2023 à Juillet 2024",
-        company: "<a href='https://free-is.org/grade/'>Funabashi International School</a> (Tokyo, Japon) <br> ",
-        mainText: "Professeur d’anglais durant 3 mois <br> Étude des méthodes managériales Japonaise <br> Découverte de la culture et de la langue : écrire, parler et savoir être",
+        title: "Membre du Club Paradisiers",
+        date: "2021/2022",
+        company: "<a href='https://www.facebook.com/paradisiers?locale=fr_FR'>Les Paradisiers de l'AIAC </a> <br> ",
+        mainText: "Organiser une caravane humanitaire (réaménagement d’une école primaire).",
         images: [
         ]
     },
     {
-        title: "Manager évènementiel",
-        date: "Mars 2022 à Mars 2023",
-        company: "<a> Union Des Associations</a> (13) <br> ",
-        mainText: "Superviseur des évènements Centraliens <br> Gestion de la planification <br> Participation aux commissions stratégiques",
+        title: "Membre du bureau du Club AIAC Animal Aid",
+        date: "2021/2022",
+        company: "<a href='https://www.facebook.com/profile.php?id=100081960567983&locale=fr_FR'>AIAC Animal Aid</a> <br>",
+        mainText: "Lancer des ateliers et des événements passionnants pour sensibiliser les étudiants à la protection animale. En leur montrant l'importance du bien-être des animaux à travers des rencontres avec des experts et des campagnes interactives, on vise à inspirer un changement positif dans leur attitude envers les animaux.",
         images: [
         ]
     },
     {
-        title: "Responsable du Weekend d'Intégration",
-        date: "Janvier 2022 à janvier 2023",
-        company: "<a> Bureau Des Élèves</a> (13) <br> ",
-        mainText: "Travail en équipe <br> Encadrement de 500 personnes",
+        title: "Membre du Club AIAC Electronics ",
+        date: "2021/2022",
+        company: "<a href='https://www.facebook.com/AIACElectronicsCLUB?locale=fr_FR'>AIAC Electronics CLUB </a> <br>",
+        mainText: "Le AIAC ELECTRONICS CLUB se consacre à développer les compétences en électronique et systèmes embarqués, offrant également des explorations en robotique, programmation, IoT et automatisme pour ceux prêts à relever des défis et à innover.",
         images: [
         ]
     },
