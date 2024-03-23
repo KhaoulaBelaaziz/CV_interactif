@@ -15,6 +15,7 @@ header{
     padding: 20px 50px;
     margin-top: 20px;
     margin-bottom: 50px;
+   
 }
 
 header a{
@@ -23,6 +24,7 @@ header a{
     text-decoration: none;
     padding: 10px 70px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .boutonGauche{
@@ -138,3 +140,74 @@ main {
 .image-container:hover img {
     opacity: 0.3;
 }
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position les boutons suivant et précédent */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 3px 3px 0;
+  }
+  
+  /* Les points/bulles/indicateurs */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  

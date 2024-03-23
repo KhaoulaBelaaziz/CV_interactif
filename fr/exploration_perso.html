@@ -3,11 +3,12 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Mon CV interactif - Loisirs</title>
-        <link href="../src/styles/styleLoisirs.css" rel="stylesheet">
+        <title>Mon CV interactif - Exploration Perso</title>
+        <link href="../src/styles/styleExploration.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+        <script src="scriptExploration.js" defer></script>
     </head>
     
     <body>
@@ -16,11 +17,48 @@
             <a href="formation.html">Formation</a>
             <a href="experience.html">Expérience</a>
             <a href="competences.html">Compétences</a>
-            <a href="loisirs.html">Loisirs</a>
+            <a href="exploration_perso.html">Exploration Perso</a>
             <a href="contact.html" class="boutonDroite">Contact</a>
         </header>
-        <h1 class="titreOnglet">Loisirs</h1>
+        <h1 class="titreOnglet">Exploration Personnelle</h1>
         <main>
+            <div class="slideshow-container">
+                <!-- Diapositives -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="../src/images/japon.jpeg" style="width:100%">
+                  <div class="text">Méditation</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="../src/images/technologie.png" style="width:100%">
+                  <div class="text">Gestion du Temps</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="../src/images/handball.JPG" style="width:100%">
+                  <div class="text">Communication</div>
+                </div>
+              
+                <!-- Boutons suivant/précédent -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- Points de navigation -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+              
+        
+            
+
+        <!--
             <div class="image-container" data-title="Handball" data-subtitle=" 17 ans de Handball en temps que joueur, j'ai évolué au niveau régional en club avec Voiron (38), j'ai participé à la formation des équipes les plus jeunes du club, je suis arbitre officiel au niveau régional et j'étais capitaine de l'équipe de Centrale Méditerranée">
                 <img src="../src/images/handball.JPG" alt="handball" title="handball">
             </div> 
@@ -33,6 +71,8 @@
             <div class="image-container" data-title="Histoire" data-subtitle="Passionné d'histoire et de culture étrangère, je profite de chaque opportunité pour découvrir les coutumes et mythes des régions du monde; des dieux grecs aux empereurs Japonais">
                 <img src="../src/images/japon.jpeg" alt="japon" title="japon">
             </div>
+            -->
+
         </main>
         <footer>
             <a href="https://www.linkedin.com/in/mathis-schultz/" class="lienLinkedin">

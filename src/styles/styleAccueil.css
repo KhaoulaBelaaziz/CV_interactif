@@ -22,11 +22,12 @@ header{
 }
 
 header a{
-    background-color: #A4A6B1;
+    background-color: #ff704c;
     color: #1F2039;
     text-decoration: none;
     padding: 10px 70px;
-    font-weight: 600;
+    font-size: 0.9em;
+    white-space: nowrap;
 }
 
 a{
