@@ -1,13 +1,22 @@
-* {
+/* Styles communs */
+*,
+*::before,
+*::after {
     margin: 0;
-}
-  
-body{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    background-color: #1F2039;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-header{
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #121454; /* Couleur de fond du deuxième code */
+    scroll-behavior: smooth;
+}
+
+/* Header et Footer du deuxième code */
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,12 +24,12 @@ header{
     padding: 20px 50px;
     margin-top: 20px;
     margin-bottom: 50px;
-   
+
 }
 
-header a{
+header a {
     background-color: #A4A6B1;
-    color: #1F2039;
+    color: #FFFFFF; /* Changé pour une meilleure lisibilité */
     text-decoration: none;
     padding: 10px 70px;
     font-weight: 600;
@@ -37,9 +46,9 @@ header a{
     border-top-right-radius: 20px;
 }
 
-footer{
-    background-color: white;
-    position: fixed; /* or absolute, depending on your layout */
+footer {
+    background-color: rgb(255, 45, 45);
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -49,165 +58,181 @@ footer{
     align-items: center;
 }
 
-
-.logoLinkedin{
+footer a img {
     height: 40px;
     width: 40px;
     margin-right: 20px;
     position: relative;
 }
 
-.logoDownload{
-    height: 40px;
-    width: 40px;
-    margin-right: 20px;
-    position: relative;
+/* Styles spécifiques à la section 'Tranding' du premier code */
+.container {
+    max-width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    color: var(--white); /* Ajusté pour correspondre au body */
 }
 
-a:hover {
-    opacity: 0.5;
-}
-
-h1{
-    color: #A4A6B1;
-    font-size: 3.5em;
-    margin-bottom: 30px;
-}
-
-.titreOnglet{
-    margin-left: 100px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.image-container {
-    position: relative;
-    width: 100%;
-}
-
-.image-container img {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.image-container::before {
-    content: attr(data-title);
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.text-center {
     text-align: center;
-    background-color: #1F2039;
-    color: white;
-    font-size: 100px;
-    padding: 16px 32px;
 }
 
-.image-container::after {
-    content: attr(data-subtitle);
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+.section-heading {
+    font-size: 3rem;
+    color: #ec994b; /* Couleur primaire du premier code */
+    padding: 2rem 0;
 }
 
-.image-container:hover::before,
-.image-container:hover::after {
-    opacity: 1;
-}
-
-
-.image-container:hover img {
-    opacity: 0.3;
-}
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+#tranding {
+    padding: 20px 0;
   }
   
-  .mySlides {
+  @media (max-width:200px) {
+    #tranding {
+      padding: 10px 0;
+    }
+  }
+  
+  #tranding .tranding-slider {
+    height: 500px;
+    padding: 10px 0;
+    position: relative;
+    background-color: yellow;
+  }
+  
+  @media (max-width:200px) {
+    #tranding .tranding-slider {
+      height: 45px;
+    }
+  }
+  
+  .tranding-slide {
+    width: 100px;
+    height: 20px;
+    position: relative;
+    background-color: green;
+  }
+
+  .swiper-slide {
+        width: 300px; 
+        height: 200px; 
+      
+  }
+  
+  @media (max-width:500px) {
+    .tranding-slide {
+      width: 200px !important;
+      height: 40px !important;
+    }
+    .tranding-slide .tranding-slide-img img {
+      width: 150px !important;
+      height: auto !important;
+    }
+  }
+  
+  .tranding-slide .tranding-slide-img img {
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .tranding-slide .tranding-slide-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+
+  .tranding-slide-content .tranding-slide-content-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: yellowgreen;
+  }
+  
+ 
+  .rating ion-icon {
+    color: var(--primary);
+  }
+  
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
     display: none;
   }
   
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  .tranding-slider-control {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  .tranding-slider-control .swiper-button-next {
+    left: 58% !important;
+    transform: translateX(-58%) !important;
   }
   
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  @media (max-width:990px) {
+    .tranding-slider-control .swiper-button-next {
+      left: 70% !important;
+      transform: translateX(-70%) !important;
+    }
   }
   
-  /* Position les boutons suivant et précédent */
-  .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
+  @media (max-width:450px) {
+    .tranding-slider-control .swiper-button-next {
+      left: 80% !important;
+      transform: translateX(-80%) !important;
+    }
   }
   
-  .next {
-    right: 0;
-    border-radius: 3px 3px 3px 0;
+  @media (max-width:990px) {
+    .tranding-slider-control .swiper-button-prev {
+      left: 30% !important;
+      transform: translateX(-30%) !important;
+    }
   }
   
-  /* Les points/bulles/indicateurs */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+  @media (max-width:450px) {
+    .tranding-slider-control .swiper-button-prev {
+      left: 20% !important;
+      transform: translateX(-20%) !important;
+    }
+  }
+  
+  .tranding-slider-control .slider-arrow {
+    background: var(--white);
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    left: 42%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
   }
   
-  .active, .dot:hover {
-    background-color: #717171;
+  .tranding-slider-control .slider-arrow ion-icon {
+    font-size: 2rem;
+    color: #71ce2b;
   }
   
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  .tranding-slider-control .slider-arrow::after {
+    content: '';
   }
   
+  .tranding-slider-control .swiper-pagination {
+    position: relative;
+    width: 15rem;
+    bottom: 1rem;
+  }
+  
+  .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  }
+  
+  .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+  }
