@@ -4,7 +4,7 @@
   
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
-    background-color: #1F2039;
+    background-color: #19535d;
 }
 
 header{
@@ -15,16 +15,24 @@ header{
     padding: 20px 50px;
     margin-top: 20px;
     margin-bottom: 50px;
-
 }
 
 header a{
-    background-color: #A4A6B1;
+    background-color: #eed2aa;
     color: #1F2039;
     text-decoration: none;
     padding: 10px 70px;
-    font-weight: 600;
+    font-size: 0.9em;
     white-space: nowrap;
+}
+
+a{
+    text-decoration: none;
+    color: #eed2aa;
+}
+
+a:hover {
+    opacity: 0.5;
 }
 
 .boutonGauche{
@@ -36,7 +44,6 @@ header a{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 footer{
     background-color: white;
     position: fixed; /* or absolute, depending on your layout */
@@ -69,14 +76,14 @@ a:hover {
 }
 
 h2{
-    color: #A4A6B1;
+    color: #eed2aa;
     font-size: 2em;
     text-align: center;
     margin-bottom: 45px;
 }
 
 main{
-    color: #A4A6B1;
+    color: #eed2aa;
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 30px;
@@ -105,13 +112,13 @@ button {
     border: none;
     border-radius: 20px;
     color: #1F2039;
-    background-color: #A4A6B1;
+    background-color: #eed2aa;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 600;
 }
 
 button:hover {
     color: #1F2039;
-    background-color: #A4A6B1;
+    background-color: #eed2aa;
     cursor: pointer;
 }

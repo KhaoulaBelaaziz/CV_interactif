@@ -4,7 +4,7 @@
   
 body{
     font-family: 'Barlow Semi Condensed', sans-serif;
-    background-color: #1F2039;
+    background-color: #19535d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ main {
 }
 
 h1{
-    color: #A4A6B1;
+    color: #eed2aa;
     font-size: 3.5em;
     margin-bottom: 30px;
     display: block;

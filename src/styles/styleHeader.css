@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Cela va répartir vos éléments de manière égale */
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+header a {
+    background-color: #ff704c;
+    color: #1F2039;
+    text-decoration: none;
+    padding: 10px 70px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    flex: 1; /* Cela indique à chaque élément de prendre une part égale de l'espace */
+    text-align: center; /* Cela va centrer le texte dans chaque élément <a> */
+    margin: 0 10px; /* Espacement entre les éléments */
+}
+
+/* Pour les boutons gauche et droite pour garder la forme arrondie aux extrémités */
+.boutonGauche {
+    margin-left: 0; /* Annule la marge gauche pour le premier élément */
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.boutonDroite {
+    margin-right: 0; /* Annule la marge droite pour le dernier élément */
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Cela va enlever la bordure de la liste des liens pour le cas où ils sont placés dans une liste */
+nav .navigation ul {
+    list-style-type: none;
+}
+
+nav .navigation li {
+    display: inline; /* ou 'inline-block' selon votre mise en page */
+}
+.nav-link {
+    /* Styles pour les liens */
+    background-color: #3dbf45;
+    color: #1F2039;
+    padding: 10px 70px;
+    /* Autres styles */
+}
