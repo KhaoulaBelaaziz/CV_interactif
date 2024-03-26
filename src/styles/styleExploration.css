@@ -1,22 +1,23 @@
-/* Styles communs */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
+/* Import Google font - Poppins */
+
+* {
+  margin: 0;
+  padding: 0;
+
 }
 
-body {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    background-color: #121454; /* Couleur de fond du deuxième code */
-    scroll-behavior: smooth;
+
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #1F2039;
+  margin: 0;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+
 }
 
-/* Header et Footer du deuxième code */
-header {
+header{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,9 +28,9 @@ header {
 
 }
 
-header a {
+header a{
     background-color: #A4A6B1;
-    color: #FFFFFF; /* Changé pour une meilleure lisibilité */
+    color: #1F2039;
     text-decoration: none;
     padding: 10px 70px;
     font-weight: 600;
@@ -46,9 +47,24 @@ header a {
     border-top-right-radius: 20px;
 }
 
-footer {
-    background-color: rgb(255, 45, 45);
-    position: fixed;
+h1{
+  color: #A4A6B1;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+.titreOnglet{
+  margin-left: 100px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+    background-color: white;
+    position: fixed; /* or absolute, depending on your layout */
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -58,181 +74,196 @@ footer {
     align-items: center;
 }
 
-footer a img {
+
+.logoLinkedin{
     height: 40px;
     width: 40px;
     margin-right: 20px;
     position: relative;
 }
 
-/* Styles spécifiques à la section 'Tranding' du premier code */
-.container {
-    max-width: 124rem;
-    padding: 0 1rem;
-    margin: 0 auto;
-    color: var(--white); /* Ajusté pour correspondre au body */
+.logoDownload{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    position: relative;
 }
 
-.text-center {
-    text-align: center;
+a:hover {
+    opacity: 0.5;
 }
 
-.section-heading {
-    font-size: 3rem;
-    color: #ec994b; /* Couleur primaire du premier code */
-    padding: 2rem 0;
+
+
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #5d4c4c;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
 }
 
-#tranding {
-    padding: 20px 0;
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
   }
-  
-  @media (max-width:200px) {
-    #tranding {
-      padding: 10px 0;
-    }
-  }
-  
-  #tranding .tranding-slider {
-    height: 500px;
-    padding: 10px 0;
-    position: relative;
-    background-color: yellow;
-  }
-  
-  @media (max-width:200px) {
-    #tranding .tranding-slider {
-      height: 45px;
-    }
-  }
-  
-  .tranding-slide {
-    width: 100px;
-    height: 20px;
-    position: relative;
-    background-color: green;
-  }
+}
 
-  .swiper-slide {
-        width: 300px; 
-        height: 200px; 
-      
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
   }
-  
-  @media (max-width:500px) {
-    .tranding-slide {
-      width: 200px !important;
-      height: 40px !important;
-    }
-    .tranding-slide .tranding-slide-img img {
-      width: 150px !important;
-      height: auto !important;
-    }
-  }
-  
-  .tranding-slide .tranding-slide-img img {
-    width: 20px;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-  }
-  
-  .tranding-slide .tranding-slide-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
+}
 
-  .tranding-slide-content .tranding-slide-content-bottom {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: yellowgreen;
-  }
-  
- 
-  .rating ion-icon {
-    color: var(--primary);
-  }
-  
-  .swiper-slide-shadow-left,
-  .swiper-slide-shadow-right {
-    display: none;
-  }
-  
-  .tranding-slider-control {
-    position: relative;
-    bottom: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .tranding-slider-control .swiper-button-next {
-    left: 58% !important;
-    transform: translateX(-58%) !important;
-  }
-  
-  @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-next {
-      left: 70% !important;
-      transform: translateX(-70%) !important;
-    }
-  }
-  
-  @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-next {
-      left: 80% !important;
-      transform: translateX(-80%) !important;
-    }
-  }
-  
-  @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-prev {
-      left: 30% !important;
-      transform: translateX(-30%) !important;
-    }
-  }
-  
-  @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-prev {
-      left: 20% !important;
-      transform: translateX(-20%) !important;
-    }
-  }
-  
-  .tranding-slider-control .slider-arrow {
-    background: var(--white);
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    left: 42%;
-    transform: translateX(-42%);
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-  }
-  
-  .tranding-slider-control .slider-arrow ion-icon {
-    font-size: 2rem;
-    color: #71ce2b;
-  }
-  
-  .tranding-slider-control .slider-arrow::after {
-    content: '';
-  }
-  
-  .tranding-slider-control .swiper-pagination {
-    position: relative;
-    width: 15rem;
-    bottom: 1rem;
-  }
-  
-  .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-  }
-  
-  .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--primary);
-  }
+.carousel .card1 {
+  scroll-snap-align: start;
+  height: 342px; /* ou la hauteur que vous souhaitez */
+  list-style: none;
+  cursor: pointer;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Pour positionner correctement le texte descriptif */
+  overflow: hidden; /* Pour les bordures arrondies */
+  transition: all 0.3s ease;
+}
+.card1 .card-title{
+  color: white;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.card1 .card-link{
+  color: white;
+  font-size: 10px;
+}
+
+.card1 .description {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7); /* Fond semi-transparent pour le texte */
+  text-align: center;
+  padding: 5px;
+  border-radius: 0 0 8px 8px; /* Arrondir les bords inférieurs */
+  opacity: 0; /* Rend le texte complètement transparent initialement */
+  transition: opacity 0.3s ease; /* Anime l'opacité pour un effet de fondu */
+}
+
+
+.card1:hover .description {
+  opacity: 1; /* Le texte devient opaque lors du survol */
+}
+
+
+.card1 .card-title,
+.card1 .card-link a {
+  opacity: 0; /* Rendre le titre et le lien transparents initialement */
+  transition: opacity 0.3s ease; /* Anime l'opacité pour un effet de fondu */
+}
+
+.card1:hover .card-title,
+.card1:hover .card-link a {
+  opacity: 1; /* Rend le titre et le lien complètement opaques lors du survol */
+}
+
+.card1 .card-link a {
+  color: inherit; /* Ou toute autre couleur que vous voulez pour votre lien */
+  text-decoration: none; /* Supprimer le soulignement par défaut des liens */
+}
+
+.card1 .card-link a:hover {
+  text-decoration: underline; /* Ou tout autre effet de survol que vous préférez */
+}
+

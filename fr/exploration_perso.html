@@ -8,7 +8,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
         <link href="../src/styles/styleExploration.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontawesome Link for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="scriptExploration.js" defer></script>
     </head>
     
     <body>
@@ -21,157 +24,47 @@
             <a href="contact.html" class="boutonDroite">Contact</a>
         </header>
         <h1 class="titreOnglet">Exploration Personnelle</h1>
-        <main>
-            
-            <section id="tranding">
-                <div class="container">
-                  <h1 class="text-center section-heading">Tranding food</h1>
-                </div>
-                <div class="container">
-                  <div class="swiper tranding-slider">
-                    <div class="swiper-wrapper">
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Special Pizza
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Meat Ball
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Burger
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Frish Curry
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Pane Cake
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Vanilla cake
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                      <!-- Slide-start -->
-                      <div class="swiper-slide tranding-slide">
-                        <div class="tranding-slide-img">
-                          <img src="../src/images/img_profil.png" alt="Tranding">
-                        </div>
-                        <div class="tranding-slide-content">
-                          <div class="tranding-slide-content-bottom">
-                            <h2 class="food-name">
-                              Straw Cake
-                            </h2>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Slide-end -->
-                    </div>
-          
-                    <div class="tranding-slider-control">
-                      <div class="swiper-button-prev slider-arrow">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                      </div>
-                      <div class="swiper-button-next slider-arrow">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                      </div>
-                      <div class="swiper-pagination"></div>
-                    </div>
-          
-                  </div>
-                </div>
-              </section>
-          
+        <section>
+          <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+
+              <li class="card1" style="background-image: url('../src/images/genekeys.png');">
+                <h2 class="card-title">GeneKeys</h2>
+                <span class="card-link"><a href="https://genekeys.com/">GeneKeys</a></span>
+                <p class="description">Une fusion de l'astrologie, de l'I Ching, et des concepts génétiques pour l'évolution personnelle et spirituelle.</p>
+              </li>
+              <li class="card1" style="background-image: url('../src/images/classificative.png');">
+                <h2 class="card-title">Médecines non conventionnelles</h2>
+                <span class="card-link"><a href="https://medecine-integree.com/le-test-des-couleurs-de-luscher/" >Médecine intégrée</a></span>
+                <p class="description">La médecine classificative est une approche innovante visant à diagnostiquer et traiter les troubles physiques et psychologiques en se concentrant sur les émotions. Elle repose sur l'idée que les émotions jouent un rôle clé dans l'apparition des maladies et propose des méthodes pour mesurer, analyser et classer précisément les émotions afin d'identifier les causes profondes des maladies. </p>
+              </li>
+              <li class="card1" style="background-image: url('../src/images/femininbeauty.jpg');">
+                <h2 class="card-title">Yin & Yang</h2>
+                <span class="card-link"><a href="https://www.hagartareq.com/" >Académie de Hagar Tareq</a></span>
+                <p class="description">L'énergie féminine & masculine : Yin & Yang. </p>
+              </li>
+              <li class="card1" style="background-image: url('../src/images/blessures.jpg');">
+                <h2 class="card-title">Les blessures de l'âme</h2>
+                <span class="card-link"><a href="https://www.lisebourbeau.com/fr/" >Lise Bourbeau</a></span>
+                <p class="description">La théorie des cinq blessures de l'âme identifie cinq types principaux de blessures émotionnelles (rejet, abandon, humiliation, trahison, injustice) qui façonnent nos comportements et nos relations, suggérant que la guérison de ces blessures profondes peut mener à une vie plus épanouie et authentique. </p>
+              </li>
+   
+              <li class="card">
+                <div class="img"><img src="../src/images/hill.jpg" alt="img" draggable="false"></div>
+                <h2>Philosophie du succès</h2>
+                <span><a href="https://fr.wikipedia.org/wiki/Napoleon_Hill" >Napoleon Hill</a></span>
+              </li>
               
               
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+
+        </section>
         
-            
-
-        <!--
-            <div class="image-container" data-title="Handball" data-subtitle=" 17 ans de Handball en temps que joueur, j'ai évolué au niveau régional en club avec Voiron (38), j'ai participé à la formation des équipes les plus jeunes du club, je suis arbitre officiel au niveau régional et j'étais capitaine de l'équipe de Centrale Méditerranée">
-                <img src="../src/images/handball.JPG" alt="handball" title="handball">
-            </div> 
-            <div class="image-container" data-title="Moto" data-subtitle="Passionné de moto depuis toujours, j'ai eu l'occasion de faire des essaies sur circuit, je profite des week-ends pour parcourir la France avec ma moto et ma tente.">
-                <img src="../src/images/moto.jpeg" alt="moto" title="moto">
-            </div>
-            <div class="image-container" data-title="Nouvelles Technologies" data-subtitle="Je suis l'actualité de la technologie quotidiennement, je consacre hebdomadairement du temps pour me former à de nouveaux outils : Power BI, Large Language Model, cybersécurité, Trading et investissement, actualité des Jeux Vidéos">
-                <img src="../src/images/technologie.png" alt="wei" title="wei">
-            </div>
-            <div class="image-container" data-title="Histoire" data-subtitle="Passionné d'histoire et de culture étrangère, je profite de chaque opportunité pour découvrir les coutumes et mythes des régions du monde; des dieux grecs aux empereurs Japonais">
-                <img src="../src/images/japon.jpeg" alt="japon" title="japon">
-            </div>
-            -->
-
-        </main>
+      
+          
         <footer>
             <a href="https://www.linkedin.com/in/mathis-schultz/" class="lienLinkedin">
                 <img src="../src/images/logo-linkedin-blanc.webp" alt="Logo Linkedin" class="logoLinkedin">
@@ -184,9 +77,6 @@
             </a>
         </footer>
 
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-              <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-              <script src="scriptExploration.js"></script>
+        
     </body>
 </html>
